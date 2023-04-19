@@ -1,15 +1,7 @@
 <?php 
     $pswLenght = $_GET['userPswLenght'] ?? 0 ;
 
-    function randomPSW($lenght){
-        $password = [];
-        $allChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz@#$&*';
-        for($i=0; $i < $lenght; $i++ ){
-            $char = $allChar[rand(0,66)];
-            $password[] = $char;
-            }
-        return implode($password);
-    };
+    include './functions.php';
 ?>
 
 <!DOCTYPE html>
